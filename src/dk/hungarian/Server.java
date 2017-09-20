@@ -1,5 +1,7 @@
 package dk.hungarian;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -68,6 +70,8 @@ public class Server {
                     } else {
                         // Når vi skriver, sender vi en linie med PrintWriter
                         out.println(stream);
+                        System.out.println("Modtog besked " + stream);
+                        
                     }
                 }
 
